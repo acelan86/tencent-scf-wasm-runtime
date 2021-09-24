@@ -81,7 +81,7 @@ export default function Home() {
     reader.onload = function(e) {
       setLoading(true);
       var oReq = new XMLHttpRequest();
-      oReq.open("POST", process.env.NEXT_PUBLIC_FUNCTION_URL, true);
+      oReq.open("POST", 'https://service-qjvqhc17-1254166148.bj.apigw.tencentcs.com/release/', true);
       oReq.setRequestHeader('image-type', origImg.file.type);
       oReq.responseType = 'blob';
       oReq.onload = (function(bImg) {
